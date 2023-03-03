@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #8fe7d8, #3e8180);
+            background-attachment: fixed;
+        }
+        main {
+            background-color: white;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.328);
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Olá, Mundo!</h1>
+    </main>
+    <script>
+       var n1 = Number.parseInt(window.prompt('Digite um número: ')) //string característica do comando
+       var n2 = Number.parseInt(window.prompt('Digite outro número: ')) //string característica do comando
+       var soma = n1 + n2
+
+       //window.alert('A soma dos valores é ' + String(soma)) //concatenação
+
+       window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+
+
+
+
+       //(number + number) para adição
+       //(string + string) para concatenação
+       //Number.parseInt() para converter em números inteiros
+       //Number.parceFloat() para converter em números reais com ponto e vírgula
+       //Number() o JS que decide se é número inteiro ou real
+       //String(n)  ou n.string()  para transformar um número em string
+
+       //${} placeholder/tamplestring facilita a formatação ao inves de ficar usando concatenação abrindo e fechando '' (lembrando que nesse caso tem que usar crase ``)
+    </script>
+</body>
+</html>
