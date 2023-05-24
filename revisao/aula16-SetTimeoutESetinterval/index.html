@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            text-align: center;
+        }
+        h2#tempo {
+            margin: 50px;
+        }
+
+        button {
+            padding: 50px;
+            border-radius: 10px;
+        }
+        button.star {
+            background-color: rgb(128, 255, 0);
+        }
+        button.stop {
+            background-color: rgb(245, 28, 28);
+        }
+    </style>
+</head>
+<body>
+    <h1>Controle de Tempo</h1>
+    <h2 id="tempo">10</h2>
+    <button class="star" onclick="ativarContagem()">Ativar Contagem</button>
+    <button class="stop" onclick="desativarContagem()">Parar Contagem</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
